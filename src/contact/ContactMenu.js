@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import DOMPurify from "dompurify";
-import "../styles/contact.css";
 
 export default function ContactMenu() {
   const initialState = {
@@ -65,17 +64,17 @@ export default function ContactMenu() {
     const errors = {};
 
     if (!name.trim()) {
-      errors.name = "Name is required";
+      errors.name = "Le nom est requis";
     }
 
     if (!email.trim()) {
-      errors.email = "Email is required";
+      errors.email = `L'email est requis`;
     } else if (!isValidEmail(email)) {
-      errors.email = "Invalid email format";
+      errors.email = "Format email invalide";
     }
 
     if (!message.trim()) {
-      errors.message = "Message is required";
+      errors.message = "Un message est requis";
     }
 
     return errors;
@@ -96,7 +95,7 @@ export default function ContactMenu() {
               type="text"
               id="name"
               name="name"
-              placeholder="Name"
+              placeholder="Nom"
               value={formData.name}
               onChange={handleChange}
               className={errors.name ? "error" : ""}
@@ -138,15 +137,15 @@ export default function ContactMenu() {
             )}
           </div>
           <button type="submit" disabled={isLoading}>
-            {isLoading ? "SENDING..." : "SUBMIT"}
+            {isLoading ? "En cours..." : "Envoyer"}
           </button>
         </form>
       )}
       {isSent && (
         <div className="success-message">
-          <p>SUCCESS!</p>
-          <p>Your message has been successfully sent!</p>
-          <p>You can safely leave this page.</p>
+          <p>Yeah ❤️</p>
+          <p>Votre message a été envoyé avecc succès!</p>
+          <p>Vous pouvez continuer à explorer.</p>
         </div>
       )}
     </div>
