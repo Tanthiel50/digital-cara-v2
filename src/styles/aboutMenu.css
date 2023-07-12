@@ -7,6 +7,10 @@
     transform: translateY(-60%);
     left: 10vw;
   }
+
+  h3{
+    font-weight: 400;
+  }
   
   .item {
     height: 3.7rem;
@@ -56,6 +60,7 @@
   .sub-container-2.active-subheading h3,
   .sub-container-3.active-subheading h3 {
     border-radius: var(--radius-left);
+    font-weight: 600;
   }
   
   .sub-container-1.active-subheading h3 {
