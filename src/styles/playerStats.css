@@ -39,6 +39,14 @@ h2{
     width: 6.2rem;
 }
 
+.music-toggle{
+    width: 30%;
+}
+
+.music-toggle img{
+    color: var(--purple);
+}
+
 @media (max-width: 1100px) {
     #playerStats {
         left: 50%;
@@ -52,5 +60,8 @@ h2{
     }
     h2, h3, p{
         font-size: 0.7rem;
+    }
+    .music-toggle{
+        width: 20%;
     }
 }
