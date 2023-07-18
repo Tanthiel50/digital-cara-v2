@@ -11,8 +11,7 @@ const subheadingsData = {
           jusqu’ici sur mon temps libre, le développement
           web. Après une formation full stack JS auprès
           de Believemy, je souhaite maintenant effectuer
-          un Bachelor DEVOPS en alternance auprès de
-          EPSI Nantes.
+          une alternance en 1 an sur Nantes à partir de septembre 2023.
           </p>
         </>
       ),
@@ -20,12 +19,12 @@ const subheadingsData = {
   ],
   2: [
     {
-      title: "2023- 2024 EPSI DEVOPS",
+      title: "2023- 2024 Alernance",
       content: (
         <>
           <p>Alternance sur 12 mois
             <ul>
-              <li>Développer des solutions applicatives adaptées à l’infrastructure en langage objet : java, python, etc</li>
+              <li>Développer des solutions applicatives adaptées à l’infrastructure,</li>
               <li>Tester et intégrer de façon continue des solutions applicatives adaptées à l’infrastructure,</li>
               <li>Créer du code avec intégration et livraison continues,</li>
               <li>Concevoir et améliorer des bases de données</li>
